@@ -5,12 +5,14 @@
 class Translation(object):
     
     START_TEXT = """
-😅 Hai {}, 
+😍 Hai {} ,
 
-I am a filter bot with advanced features 
-currently working for @{} 
+💡 Telegram Auto Filter Bot
 
-⚜️ 𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐁𝐲 👉 @{}
+ɪ ᴀᴍ ᴀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ sɪᴍᴘʟʏ sᴇᴀʀᴄʜ ғᴏʀ ᴛʜᴇ ғɪʟᴇs ᴍᴀᴅᴇ ғᴏʀ <a href="https://t.me/infinityCLK">ɪɴғɪɴɪᴛʏ ᴄᴏᴍᴍᴜɴɪᴛʏ</a> ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ɢɪᴠᴇɴ ᴏ̨ᴜᴇʀʏ ᴀɴᴅ ɢɪᴠᴇs ʟɪɴᴋ ᴛᴏ ᴛʜᴏsᴇ ғɪʟᴇs ᴀs ʙᴜᴛᴛᴏɴs
+
+
+🔅 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ:- @Dx_Doc
 """   
     
     HELP_TEXT = """
