@@ -12,7 +12,7 @@ from .translation import Translation
 
 #force sub config
 
-FORCESUB_CHANNEL = os.environ.get("BOTS_Infinity")
+FORCESUB_CHANNEL = os.environ.get("FORCESUB_CHANNEL", "BOTS_Infinity")
 
 
 # Change Accordingly While Deploying To A VPS
