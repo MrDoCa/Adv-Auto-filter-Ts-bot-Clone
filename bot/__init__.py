@@ -10,6 +10,11 @@ from logging.handlers import RotatingFileHandler
 
 from .translation import Translation
 
+#force sub config
+
+FORCESUB_CHANNEL = os.environ.get("BOTS_Infinity")
+
+
 # Change Accordingly While Deploying To A VPS
 APP_ID = int(os.environ.get("APP_ID"))
 
