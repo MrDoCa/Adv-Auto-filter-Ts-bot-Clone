@@ -7,14 +7,14 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 from  bot.__init__ import BOT_NAME, ADMIN_USERNAME, GROUP_USERNAME
-from bot import BOTS_Infinity
+from bot import FORCESUB_CHANNEL
 
 db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
 #adding force subscribe option to bot
-    update_channel = BOTS_Infinity
+    update_channel = FORCESUB_CHANNEL
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
