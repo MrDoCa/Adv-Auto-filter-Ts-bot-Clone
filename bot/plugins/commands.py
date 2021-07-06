@@ -7,6 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 from  bot.__init__ import BOT_NAME, ADMIN_USERNAME, GROUP_USERNAME
+from pyrogram.errors import UserNotParticipant
 from bot import FORCESUB_CHANNEL
 
 db = Database()
