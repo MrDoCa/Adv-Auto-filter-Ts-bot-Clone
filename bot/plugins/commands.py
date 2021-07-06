@@ -7,17 +7,16 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 from  bot.__init__ import BOT_NAME, ADMIN_USERNAME, GROUP_USERNAME
-from bot import BOTS_Infinity
 
 db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
 #adding force subscribe option to bot
-    BOTS_Infinity = BOTS_Infinity
-    if BOTS_Infinity:
+    update_channel = BOTS_Infinity
+    if update_channel:
         try:
-            user = await bot.get_chat_member(BOTS_Infinity, update.chat.id)
+            user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked":
                await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
                return
@@ -40,7 +39,6 @@ Join on our channel to get movies ✅
               ])
             )
             return
-    
     try:
         file_uid = update.command[1]
     except IndexError:
