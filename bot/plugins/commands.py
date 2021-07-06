@@ -7,11 +7,39 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 from  bot.__init__ import BOT_NAME, ADMIN_USERNAME, GROUP_USERNAME
+from bot import BOTS_Infinity
 
 db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
+#adding force subscribe option to bot
+    BOTS_Infinity = BOTS_Infinity
+    if BOTS_Infinity:
+        try:
+            user = await bot.get_chat_member(BOTS_Infinity, update.chat.id)
+            if user.status == "kicked":
+               await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
+               return
+        except UserNotParticipant:
+            #await update.reply_text(f"Join @{BOTS_Infinity} To Use Me")
+            await update.reply_text(
+                text=""" <b> ⚠️ YOU ARE NOT SUBSCRIBED OUR CHANNEL⚠️
+
+Join on our channel to get movies ✅
+
+
+⚠️താങ്കൾ ഞങ്ങളുടെ ചാനൽ സബ്സ്ക്രൈബ് ചെയ്തിട്ട് ഇല്ല ! ⚠️
+
+
+ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്യതാൽ താങ്കൾക്ക് movies കിട്ടുന്നത് ആണ് ✅
+
+⬇️Channel link⬇️ </b>""",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text="⚡ Join My Channel⚡️", url=f"https://t.me/{BOTS_Infinity}")]
+              ])
+            )
+            return
     
     try:
         file_uid = update.command[1]
