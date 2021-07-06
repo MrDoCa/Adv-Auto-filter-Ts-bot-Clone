@@ -29,11 +29,7 @@ async def start(bot, update):
 
 Join on our channel to get movies ✅
 
-
-⚠️താങ്കൾ ഞങ്ങളുടെ ചാനൽ സബ്സ്ക്രൈബ് ചെയ്തിട്ട് ഇല്ല ! ⚠️
-
-
-ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്യതാൽ താങ്കൾക്ക് movies കിട്ടുന്നത് ആണ് ✅
+©️ ɪɴғɪɴɪᴛʏ ʙᴏᴛs
 
 ⬇️Channel link⬇️ </b>""",
                 reply_markup=InlineKeyboardMarkup([
