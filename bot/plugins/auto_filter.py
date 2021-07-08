@@ -183,7 +183,7 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
-            await bot.send_text(
+            await bot.send_photo(
                 chat_id = update.chat.id,
                 photo= MASSAGE_PHOTO,
                 caption=f"**♻️ Got it \n\nYour Query 👉 {query} \n\n [©️ ɪɴғɪɴɪᴛʏ ʙᴏᴛs](https://t.me/BOTS_Infinity) **" ,
