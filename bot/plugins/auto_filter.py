@@ -8,7 +8,7 @@ from pyrogram.errors import ButtonDataInvalid, FloodWait
 
 from bot.database import Database # pylint: disable=import-error
 from bot.bot import Bot # pylint: disable=import-error
-
+from bot import MASSAGE_PHOTO
 
 FIND = {}
 INVITE_LINK = {}
@@ -184,6 +184,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
+                photo= MASSAGE_PHOTO,
                 text=f"**♻️ Got it \n\nYour Query 👉 {query} \n\n [©️ ɪɴғɪɴɪᴛʏ ʙᴏᴛs](https://t.me/BOTS_Infinity) **" ,
                 reply_markup=reply_markup,
                 parse_mode="markdown",
