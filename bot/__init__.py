@@ -16,7 +16,7 @@ FORCESUB_CHANNEL = os.environ.get("FORCESUB_CHANNEL", "BOTS_Infinity")
 
 #Add photo to filter (infinity)
 
-MASSAGE_PHOTO = os.environ.get("TEXT_MEG_PH")
+MASSAGE_PHOTO = os.environ.get("TEXT_MEG_PH", "https://telegra.ph/file/4759cfdc7db115d190b93.jpg")
 
 # Change Accordingly While Deploying To A VPS
 APP_ID = int(os.environ.get("APP_ID"))
