@@ -10,6 +10,7 @@ from bot.database import Database # pylint: disable=import-error
 from bot.bot import Bot # pylint: disable=import-error
 from bot import MASSAGE_PHOTO
 
+
 FIND = {}
 INVITE_LINK = {}
 ACTIVE_CHATS = {}
@@ -182,10 +183,10 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
-            await bot.send_photo(
+            await bot.send_text(
                 chat_id = update.chat.id,
                 photo= MASSAGE_PHOTO,
-                text=f"**♻️ Got it \n\nYour Query 👉 {query} \n\n [©️ ɪɴғɪɴɪᴛʏ ʙᴏᴛs](https://t.me/BOTS_Infinity) **" ,
+                caption=f"**♻️ Got it \n\nYour Query 👉 {query} \n\n [©️ ɪɴғɪɴɪᴛʏ ʙᴏᴛs](https://t.me/BOTS_Infinity) **" ,
                 reply_markup=reply_markup,
                 parse_mode="markdown",
                 reply_to_message_id=update.message_id
