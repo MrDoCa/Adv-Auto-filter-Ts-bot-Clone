@@ -19,10 +19,6 @@
             "description": "Your API Hash From my.telegram.org",
             "value": ""
         },
-        "AUTH_USER": {
-            "description": "Your ID",
-            "value": "1730447831"
-        },
         "BOT_TOKEN": {
             "description": "Your Bot Token From @BotFather",
             "value": ""
