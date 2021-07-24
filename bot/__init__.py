@@ -19,11 +19,9 @@ FORCESUB_CHANNEL = os.environ.get("FORCESUB_CHANNEL", "BOTS_Infinity")
 MASSAGE_PHOTO = os.environ.get("TEXT_MEG_PH", "https://telegra.ph/file/4759cfdc7db115d190b93.jpg")
 
 # Change Accordingly While Deploying To A VPS
-APP_ID = int(os.environ.get("APP_ID", "4626470"))
+APP_ID = int(os.environ.get("APP_ID"))
 
-API_HASH = os.environ.get("API_HASH", "d0b545107dfacaccf94de87d9732c4f1")
-
-AUTH_USER = os.environ.get("AUTH_USER", "1730447831")
+API_HASH = os.environ.get("API_HASH")
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
